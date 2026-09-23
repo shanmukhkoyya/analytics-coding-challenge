@@ -44,11 +44,12 @@ This repository focuses on:
 
 ## 📂 Projects
 
-| Project | Tool | Status |
-|---|---|---|
-| SQL Food Delivery Analysis | SQL / MySQL | ✅ Completed |
-| Household Energy Consumption Analysis | Microsoft Excel | ✅ Completed |
-| More projects | — | 🔄 In Progress |
+| Day | Project | Tool | Status |
+|---|---|---|---|
+| Day 01 | SQL Food Delivery Analysis | SQL / MySQL | ✅ Completed |
+| Day 02 | Household Energy Consumption Analysis | Microsoft Excel | ✅ Completed |
+| Day 03 | Quality Control Defect Analysis | Power BI / DAX | ✅ Completed |
+| Day 04+ | More projects | — | 🔄 In Progress |
 
 ---
 
@@ -64,3 +65,10 @@ analytics-coding-challenge/
 ├── Day-02-Household-Energy-Consumption-Analysis/
 │   ├── README.md
 │   └── Excel workbook
+│
+├── Day-03-Quality-Control-Defect-Analysis/
+│   ├── README.md
+│   ├── Quality_Control_Defect_Analysis.pbix
+│   └── Day3-Quality-Control.pdf
+│
+└── README.md
