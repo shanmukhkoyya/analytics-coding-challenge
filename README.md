@@ -1,6 +1,6 @@
 # 📊 Data Analytics Coding Challenge
 
-A practical, hands-on repository documenting my journey toward becoming a **job-ready Data Analyst / AI Data Analyst** through daily coding challenges and business-focused analysis.
+A practical, hands-on portfolio documenting my journey toward becoming a **job-ready Data Analyst / AI Data Analyst** through daily coding challenges and business-focused analysis.
 
 The challenges cover **SQL, Excel, Power BI, DAX, Python, statistics, exploratory data analysis, and AI-assisted analytics**.
 
@@ -41,6 +41,29 @@ Each challenge is designed to strengthen practical analytical thinking and creat
 | Day 02 | [Household Energy Consumption Analysis](./Day-02-Household-Energy-Consumption-Analysis/) | Excel | ✅ Completed |
 | Day 03 | [Quality Control Defect Analysis](./Day-03-Quality-Control-Defect-Analysis/) | Power BI / DAX | ✅ Completed |
 | Day 04+ | More analytics challenges | SQL / Excel / Power BI / Python | 🔄 In Progress |
+
+---
+
+## 🏭 Day 03 — Quality Control Defect Analysis
+
+A Power BI project focused on production quality monitoring.
+
+### Dashboard coverage
+
+- Overall Defect Rate KPI
+- Top 5 Products by Defect Count
+- Daily Defect Rate Trend
+- Defects by Production Batch
+- Date slicer for interactive filtering
+
+### Project files
+
+[Open the Day 03 project](./Day-03-Quality-Control-Defect-Analysis/)
+
+- `Quality_Control_Defect_Analysis.pbix` — Power BI dashboard
+- `Day3-Quality Control.pdf` — assignment/report
+- `README.md` — project documentation
+- `INTERVIEW-QA.md` — interview preparation
 
 ---
 
