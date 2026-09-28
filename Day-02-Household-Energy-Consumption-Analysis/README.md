@@ -1,42 +1,56 @@
-# Day 2 - Household Energy Consumption Analysis
+# ⚡ Day 02 — Household Energy Consumption Analysis
 
 ## 📌 Project Overview
 
-This project analyzes household energy consumption patterns using Microsoft Excel.
+Day 02 of the **Data Analytics Coding Challenge** focuses on analyzing household electricity consumption using **Microsoft Excel**.
 
-The analysis focuses on electricity usage based on family size, appliance count, and income level.
+The analysis examines how electricity usage varies with **family size, appliance count, and income level**, and presents the findings through Excel analysis and charts/dashboard reporting.
+
+---
 
 ## 🎯 Objectives
 
-1. Analyze energy consumption patterns across households.
-2. Identify which types of households consume the most energy.
-3. Suggest energy-saving measures for high-energy-consuming households.
-4. Visualize insights using charts and a dashboard.
+1. Analyze household energy consumption patterns.
+2. Identify household groups with higher average electricity usage.
+3. Examine the relationship between electricity consumption and household characteristics.
+4. Communicate findings using charts and an Excel dashboard.
+5. Identify practical energy-saving actions for higher-consumption households.
 
-## 🛠️ Tools Used
+---
 
-- Microsoft Excel
-- PivotTables
-- PivotCharts
-- Excel Dashboard
-- Data Analysis
+## 📊 Analysis Performed
 
-## 📊 Analysis
-
-The analysis examines average electricity consumption based on:
+The project analyzes average electricity consumption by:
 
 - Family Size
 - Appliance Count
 - Income Level
-- Monthly consumption patterns
 
-## 🔍 Key Findings
+### Key Findings
 
 - Households with **7 appliances** recorded the highest average electricity usage at approximately **339.05 kWh**.
 - Households with **3 family members** recorded the highest average electricity usage at approximately **330.63 kWh**.
 - **Middle-income households** recorded the highest average electricity usage among the income groups analyzed at approximately **308.05 kWh**.
 
-## 💡 Energy-Saving Recommendations
+These findings are based on the analysis documented in the current workbook/project.
+
+---
+
+## 📈 Dashboard & Visual Analysis
+
+The Excel workbook includes analysis and visual reporting for:
+
+- Average Electricity Usage by Family Size
+- Average Electricity Usage by Appliance Count
+- Average Electricity Usage by Income Level
+
+Excel features used include **PivotTables, PivotCharts, and dashboard-style reporting**.
+
+---
+
+## 💡 Business Recommendations
+
+Based on the project analysis, practical energy-saving actions include:
 
 - Use energy-efficient appliances.
 - Switch off appliances and lights when not required.
@@ -47,20 +61,45 @@ The analysis examines average electricity consumption based on:
 - Monitor monthly electricity consumption.
 - Use major appliances efficiently.
 
-## 📈 Dashboard
+---
 
-The workbook includes charts showing:
+## 🛠️ Tools & Skills
 
-- Average Electricity Usage by Family Size
-- Average Electricity Usage by Appliance Count
-- Average Electricity Usage by Income Level
+| Area | Skills / Tools |
+|---|---|
+| Spreadsheet Analysis | Microsoft Excel |
+| Data Summarization | PivotTables |
+| Visualization | PivotCharts |
+| Dashboarding | Excel Dashboard |
+| Business Analysis | Consumption pattern analysis |
 
-## 📁 Deliverables
+---
 
-- Excel workbook containing the complete analysis.
-- Summary of findings and recommendations.
-- Charts/dashboard illustrating consumption patterns.
+## 📂 Files
 
-## 📅 Challenge
+```text
+Day-02-Household-Energy-Consumption-Analysis/
+│
+├── Day-02-Household_Energy_Analysis.xlsx
+├── day02.pdf
+└── README.md
+```
 
-**50 Days Analytics Coding Challenge — Day 2**
+---
+
+## 🎓 Key Learning
+
+This challenge strengthened the workflow:
+
+**Understand the data → Summarize the data → Compare groups → Visualize patterns → Identify insights → Recommend actions**
+
+---
+
+## 👤 Author
+
+**Shanmukh Koyya**  
+AI Data Analyst — Portfolio & Interview Practice
+
+📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)  
+🔗 **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
+💻 **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
