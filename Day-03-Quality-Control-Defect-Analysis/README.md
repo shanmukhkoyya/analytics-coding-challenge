@@ -1,19 +1,23 @@
-# Day 03 - Quality Control Defect Analysis
+# 🏭 Day 03 — Quality Control Defect Analysis
 
 ## 📌 Project Overview
 
-This project focuses on analyzing production quality data and identifying defect patterns using Power BI.
+Day 03 of the **Data Analytics Coding Challenge** focuses on analyzing production quality data and identifying defect patterns using **Power BI and DAX**.
 
-An interactive dashboard was created to help monitor the overall defect rate, identify problematic products, analyze production batches, and understand defect trends over time.
+The project uses an interactive dashboard to monitor overall defect rate, identify products with higher defect counts, analyze production batches, and observe defect-rate trends over time.
+
+---
 
 ## 🎯 Objectives
 
 - Calculate the overall defect rate
 - Identify the top 5 products with the highest number of defects
-- Analyze defect rate trends over time
+- Analyze defect-rate trends over time
 - Analyze defects by production batch
 - Add a date slicer for interactive filtering
-- Create a professional and interactive Power BI dashboard
+- Build a professional Power BI dashboard
+
+---
 
 ## 📊 Dashboard Features
 
@@ -21,30 +25,24 @@ An interactive dashboard was created to help monitor the overall defect rate, id
 A KPI card displays the overall defect rate as a percentage.
 
 ### 2. Top 5 Products by Defect Count
-A bar chart displays the five products with the highest number of defective items.
+A bar chart highlights the five products with the highest number of defective items.
 
 ### 3. Daily Defect Rate Trend
 A line chart shows how the defect rate changes over time.
 
 ### 4. Defects by Production Batch
 A table provides defect information by:
-
 - Batch ID
 - Inspector Name
 - Production Line
 - Defective Items
 
 ### 5. Date Slicer
-A date slicer allows users to filter the dashboard for a specific time period.
+A date slicer enables filtering of the dashboard for a selected time period.
 
-## 🛠️ Tools & Technologies
+---
 
-- Power BI Desktop
-- DAX
-- Data Visualization
-- Data Analysis
-
-## 📈 Skills Demonstrated
+## 🧠 Power BI & DAX Skills Practiced
 
 - DAX measures
 - KPI cards
@@ -53,22 +51,70 @@ A date slicer allows users to filter the dashboard for a specific time period.
 - Tables
 - Slicers
 - Interactive dashboard design
-- Data analysis
+- Production-quality data analysis
+- Defect-rate analysis
 
-## 📁 Files
+---
+
+## 💼 Business Analysis
+
+This project is framed around a production quality-control use case.
+
+The dashboard supports analysis of:
+
+- Overall defect performance
+- Product-level defect counts
+- Daily defect-rate movement
+- Production-batch defect information
+- Time-based filtering
+
+These views can help a quality team focus analysis on products, batches, and periods showing higher defect activity.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Area | Technology |
+|---|---|
+| Business Intelligence | Power BI Desktop |
+| Calculations | DAX |
+| Visualization | Power BI visuals |
+| Analysis | Data Analysis |
+| Version Control | Git & GitHub |
+
+---
+
+## 📂 Files
+
+```text
+Day-03-Quality-Control-Defect-Analysis/
+│
+├── Quality_Control_Defect_Analysis.pbix
+├── Day3-Quality Control.pdf
+└── README.md
+```
 
 | File | Description |
 |---|---|
 | `Quality_Control_Defect_Analysis.pbix` | Power BI dashboard |
-| `Day3-Quality-Control.pdf` | Assignment/report |
+| `Day3-Quality Control.pdf` | Assignment/report |
 | `README.md` | Project documentation |
 
-## 📌 Key Learning
+---
 
-This project helped me practice using Power BI to transform production quality data into an interactive dashboard and communicate defect-related insights visually.
+## 🎓 Key Learning
+
+This challenge strengthened the workflow:
+
+**Understand the quality data → Define DAX metrics → Build visuals → Add interactive filtering → Analyze defect patterns → Communicate findings**
+
+---
 
 ## 👤 Author
 
-**Shanmukh Koyya**
+**Shanmukh Koyya**  
+AI Data Analyst — Portfolio & Interview Practice
 
-Aspiring AI Data Analyst
+📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)  
+🔗 **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
+💻 **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
