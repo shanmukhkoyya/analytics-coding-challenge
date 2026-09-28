@@ -165,7 +165,8 @@ It is intended to show recruiters and interviewers:
 ## 👤 About Me
 
 **Shanmukh Koyya**  
-Aspiring AI Data Analyst
+Aspiring AI Data Analyst  
+📧 shanmukhkoyya1234@gmail.com
 
 Focused on building practical skills in **SQL, Excel, Power BI, DAX, Python and data analytics**.
 
@@ -177,5 +178,3 @@ Focused on building practical skills in **SQL, Excel, Power BI, DAX, Python and 
 ## 📌 Note
 
 This repository is continuously updated as new coding challenges are completed.
-
-📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
