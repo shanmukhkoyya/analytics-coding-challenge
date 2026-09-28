@@ -180,4 +180,8 @@ This challenge strengthened the practical SQL workflow:
 **Shanmukh Koyya**  
 AI Data Analyst — Portfolio & Interview Practice
 
+📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)  
+🔗 **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
+💻 **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
+
 Skills developed across this coding challenge include **SQL, Excel, Power BI, DAX and Python**.
