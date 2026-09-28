@@ -1,127 +1,216 @@
-CREATE DATABASE DAY1;
+-- ============================================================
+-- DAY 01 | SQL FOOD DELIVERY ANALYSIS
+-- Database: MySQL
+-- Focus: Joins, Aggregation, Subqueries, Date Functions,
+--        Filtering, HAVING and Business Analysis
+-- ============================================================
 
+CREATE DATABASE IF NOT EXISTS DAY1;
 USE DAY1;
 
-CREATE TABLE Customers ( 
-    customer_id INT PRIMARY KEY, 
-    name VARCHAR(50), 
-    city VARCHAR(50) 
+-- ============================================================
+-- 1. CREATE TABLES
+-- ============================================================
+
+CREATE TABLE Customers (
+    customer_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    city VARCHAR(50)
 );
 
-SHOW TABLES;
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    restaurant VARCHAR(50),
+    amount DECIMAL(10,2),
+    order_date DATE,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+);
 
-describe Customers;
+-- ============================================================
+-- 2. INSERT SAMPLE DATA
+-- ============================================================
 
-INSERT INTO Customers (customer_id, name, city) VALUES 
-(1, 'Arjun', 'Bengaluru'), 
-(2, 'Sneha', 'Hyderabad'), 
-(3, 'Rahul', 'Chennai'), 
-(4, 'Priya', 'Bengaluru'), 
-(5, 'Kiran', 'Mumbai'), 
-(6, 'Divya', 'Bengaluru'), 
-(7, 'Vikram', 'Hyderabad'), 
-(8, 'Asha', 'Chennai'), 
-(9, 'Manoj', 'Pune'), 
+INSERT INTO Customers (customer_id, name, city) VALUES
+(1, 'Arjun', 'Bengaluru'),
+(2, 'Sneha', 'Hyderabad'),
+(3, 'Rahul', 'Chennai'),
+(4, 'Priya', 'Bengaluru'),
+(5, 'Kiran', 'Mumbai'),
+(6, 'Divya', 'Bengaluru'),
+(7, 'Vikram', 'Hyderabad'),
+(8, 'Asha', 'Chennai'),
+(9, 'Manoj', 'Pune'),
 (10, 'Swathi', 'Bengaluru');
 
-CREATE TABLE Orders ( 
-    order_id INT PRIMARY KEY, 
-    customer_id INT, 
-    restaurant VARCHAR(50), 
-    amount DECIMAL(10,2), 
-    order_date DATE, 
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) 
-); 
+INSERT INTO Orders (order_id, customer_id, restaurant, amount, order_date) VALUES
+(101, 1, 'Meghana Foods', 550.00, '2025-01-01'),
+(102, 2, 'Paradise Biryani', 780.00, '2025-01-03'),
+(103, 3, 'KFC', 420.00, '2025-01-05'),
+(104, 1, 'Empire Restaurant', 300.00, '2025-01-08'),
+(105, 4, 'Meghana Foods', 950.00, '2025-01-10'),
+(106, 6, 'Truffles', 1100.00, '2025-01-11'),
+(107, 7, 'Kritunga', 650.00, '2025-01-12'),
+(108, 4, 'KFC', 350.00, '2025-01-14'),
+(109, 9, 'Burger King', 270.00, '2025-01-15'),
+(110, 10, 'Meghana Foods', 1250.00, '2025-01-16');
 
-INSERT INTO Orders (order_id, customer_id, restaurant, amount, order_date) VALUES 
-(101, 1, 'Meghana Foods', 550.00, '2025-01-01'), 
-(102, 2, 'Paradise Biryani', 780.00, '2025-01-03'), 
-(103, 3, 'KFC', 420.00, '2025-01-05'), 
-(104, 1, 'Empire Restaurant', 300.00, '2025-01-08'), 
-(105, 4, 'Meghana Foods', 950.00, '2025-01-10'), 
-(106, 6, 'Truffles', 1100.00, '2025-01-11'), 
-(107, 7, 'Kritunga', 650.00, '2025-01-12'), 
-(108, 4, 'KFC', 350.00, '2025-01-14'), 
-(109, 9, 'Burger King', 270.00, '2025-01-15'), 
-(110, 10, 'Meghana Foods', 1250.00, '2025-01-16'); 
+-- ============================================================
+-- 3. BASIC DATA CHECKS
+-- ============================================================
 
-show tables;
+SHOW TABLES;
+DESCRIBE Customers;
+DESCRIBE Orders;
 
-SELECT * FROM customers;
-SELECT * FROM orders;
--- List all customers who have placed at least one order
+SELECT * FROM Customers;
+SELECT * FROM Orders;
 
-select distinct c.customer_id, c.name, c.city
-from customers c
-inner join orders o
-where c.customer_id=o.customer_id;
+-- ============================================================
+-- 4. BUSINESS QUESTIONS
+-- ============================================================
 
--- Find the total amount spent by each customer
+-- Q1. List all customers who have placed at least one order.
+SELECT DISTINCT
+    c.customer_id,
+    c.name,
+    c.city
+FROM Customers c
+INNER JOIN Orders o
+    ON c.customer_id = o.customer_id;
 
-select customer_id,sum(amount) total_amount
-from orders
-group by customer_id;
+-- Q2. Find the total amount spent by each customer.
+SELECT
+    customer_id,
+    SUM(amount) AS total_amount
+FROM Orders
+GROUP BY customer_id
+ORDER BY total_amount DESC;
 
--- Display the top 3 customers based on total spending
+-- Q3. Display the top 3 customers based on total spending.
+SELECT
+    customer_id,
+    SUM(amount) AS total_amount
+FROM Orders
+GROUP BY customer_id
+ORDER BY total_amount DESC
+LIMIT 3;
 
-select customer_id,sum(amount) total_amount
-from orders
-group by customer_id
-order by total_amount desc
-limit 3;
-
--- Retrieve all orders placed in the last 7 days (from latest order date)
-
+-- Q4. Retrieve orders placed in the last 7 days
+--     from the latest order date in the dataset.
 SELECT *
-FROM orders
+FROM Orders
 WHERE order_date >= DATE_SUB(
-    (SELECT MAX(order_date) FROM orders),
+    (SELECT MAX(order_date) FROM Orders),
     INTERVAL 7 DAY
-);
+)
+ORDER BY order_date DESC;
 
--- Show customers who have never placed an order
+-- Q5. Show customers who have never placed an order.
+SELECT
+    c.customer_id,
+    c.name,
+    c.city
+FROM Customers c
+LEFT JOIN Orders o
+    ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
 
-select c.customer_id,c.name,c.city
-from customers c
-left join orders o
-on c.customer_id=o.customer_id
-where o.order_id is null;
+-- Q6. Find the restaurant that received the highest number of orders.
+SELECT
+    restaurant,
+    COUNT(order_id) AS total_orders
+FROM Orders
+GROUP BY restaurant
+ORDER BY total_orders DESC
+LIMIT 1;
 
--- Find the restaurant that received the highest number of orders
+-- Q7. List Bengaluru customers who spent more than ₹1,000.
+SELECT
+    c.customer_id,
+    c.name,
+    c.city,
+    SUM(o.amount) AS total_spent
+FROM Customers c
+INNER JOIN Orders o
+    ON c.customer_id = o.customer_id
+WHERE c.city = 'Bengaluru'
+GROUP BY
+    c.customer_id,
+    c.name,
+    c.city
+HAVING SUM(o.amount) > 1000
+ORDER BY total_spent DESC;
 
-select restaurant, count(order_id) total_orders
-from orders
-group by restaurant
-order by total_orders desc
-limit 1;
+-- Q8. Show the total number of orders placed per city.
+SELECT
+    c.city,
+    COUNT(o.order_id) AS orders_count
+FROM Customers c
+INNER JOIN Orders o
+    ON c.customer_id = o.customer_id
+GROUP BY c.city
+ORDER BY orders_count DESC;
 
---  List customers from “Bengaluru” who spent more than ₹1000
+-- Q9. Find the average order amount for each restaurant.
+SELECT
+    restaurant,
+    ROUND(AVG(amount), 2) AS average_order_amount
+FROM Orders
+GROUP BY restaurant
+ORDER BY average_order_amount DESC;
 
-select c.customer_id,c.name,c.city,sum(o.amount) total
-from customers c
-inner join orders o
-on c.customer_id = o.customer_id
-where c.city= 'Bengaluru'
-group by c.customer_id,c.name,c.city
-having sum(o.amount) >1000;
+-- Q10. Identify customers who placed more than 5 orders.
+SELECT
+    c.customer_id,
+    c.name,
+    c.city,
+    COUNT(o.order_id) AS order_count
+FROM Customers c
+INNER JOIN Orders o
+    ON c.customer_id = o.customer_id
+GROUP BY
+    c.customer_id,
+    c.name,
+    c.city
+HAVING COUNT(o.order_id) > 5;
 
--- Show the total number of orders placed per city
+-- ============================================================
+-- 5. INTERVIEW PRACTICE QUESTIONS
+-- ============================================================
 
-select count(o.order_id) as orders_count, c.city
-from customers c
-inner join orders o
-where c.customer_id = o.customer_id
-group by c.city;
+-- A. Find the total revenue generated by the platform.
+SELECT ROUND(SUM(amount), 2) AS total_revenue
+FROM Orders;
 
--- Find the average order amount for each restaurant
+-- B. Find the average order value across all orders.
+SELECT ROUND(AVG(amount), 2) AS average_order_value
+FROM Orders;
 
-select avg(amount) as avverage_amount, restaurant from orders
-group by restaurant;
+-- C. Find the number of unique customers who placed orders.
+SELECT COUNT(DISTINCT customer_id) AS unique_ordering_customers
+FROM Orders;
 
--- Identify customers who placed more than 5 orders
+-- D. Find each customer's number of orders and total spending.
+SELECT
+    c.customer_id,
+    c.name,
+    COUNT(o.order_id) AS order_count,
+    ROUND(SUM(o.amount), 2) AS total_spent
+FROM Customers c
+INNER JOIN Orders o
+    ON c.customer_id = o.customer_id
+GROUP BY
+    c.customer_id,
+    c.name
+ORDER BY total_spent DESC;
 
-select count(o.order_id) count_orders, c.customer_id,c.name,c.city
-from customers c inner join orders o 
-on c.customer_id = o.customer_id
-group by c.customer_id,c.name,c.city
-having count(o.order_id)>5;
+-- E. Find the highest-value order.
+SELECT *
+FROM Orders
+ORDER BY amount DESC
+LIMIT 1;
+
+-- ============================================================
+-- END OF DAY 01
+-- ============================================================
