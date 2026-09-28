@@ -177,3 +177,5 @@ Focused on building practical skills in **SQL, Excel, Power BI, DAX, Python and 
 ## 📌 Note
 
 This repository is continuously updated as new coding challenges are completed.
+
+📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
