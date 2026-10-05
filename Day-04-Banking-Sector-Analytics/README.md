@@ -120,6 +120,20 @@ The supplied `Transaction_Date` contains dates only and does not include transac
 - Date hierarchy
 - Interactive dashboard reporting
 
+
+## Dashboard Preview
+
+### Banking Overview
+![Banking Overview](./screenshots/dashboard-overview.svg)
+
+### Loan & Customer Performance
+![Loan Performance](./screenshots/loan-performance.svg)
+
+### Customer Transaction Details
+![Customer Transaction Details](./screenshots/customer-transactions.svg)
+
+These previews highlight the main Power BI pages and the analytical flow of the project.
+
 ## Deliverables
 
 - `Banking_Sector_Analytics_Dashboard.pbix`
