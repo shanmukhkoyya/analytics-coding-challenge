@@ -40,7 +40,8 @@ Each challenge is designed to strengthen practical analytical thinking and creat
 | Day 01 | [SQL Food Delivery Analysis](./Day-01-SQL-Food-Delivery-Analysis/) | SQL / MySQL | ✅ Completed |
 | Day 02 | [Household Energy Consumption Analysis](./Day-02-Household-Energy-Consumption-Analysis/) | Excel | ✅ Completed |
 | Day 03 | [Quality Control Defect Analysis](./Day-03-Quality-Control-Defect-Analysis/) | Power BI / DAX | ✅ Completed |
-| Day 04+ | More analytics challenges | SQL / Excel / Power BI / Python | 🔄 In Progress |
+| Day 04 | [Banking Sector Analytics](./Day-04-Banking-Sector-Analytics/) | Power BI / DAX | ✅ Completed |
+| Day 05+ | More analytics challenges | SQL / Excel / Power BI / Python | 🔄 In Progress |
 
 ---
 
