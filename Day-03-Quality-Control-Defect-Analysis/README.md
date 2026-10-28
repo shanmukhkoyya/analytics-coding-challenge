@@ -19,6 +19,12 @@ The project uses an interactive dashboard to monitor overall defect rate, identi
 
 ---
 
+## Dashboard layout preview
+
+![Static layout preview for Quality Control Defect Analysis](screenshots/defect-analysis-layout-preview.svg)
+
+*This image is a design companion, not a screenshot from Power BI Desktop. The chart shapes are placeholders; no actual defect rates, product rankings, or batch values are represented. Review the PBIX for the real report and data.*
+
 ## 📊 Dashboard Features
 
 ### 1. Overall Defect Rate
@@ -91,7 +97,9 @@ Day-03-Quality-Control-Defect-Analysis/
 │
 ├── Quality_Control_Defect_Analysis.pbix
 ├── Day3-Quality Control.pdf
-└── README.md
+├── README.md
+└── screenshots/
+    └── defect-analysis-layout-preview.svg
 ```
 
 | File | Description |
