@@ -123,6 +123,8 @@ The supplied `Transaction_Date` contains dates only and does not include transac
 
 ## Dashboard Preview
 
+The SVGs below are **static dashboard previews**, not screenshots exported from Power BI Desktop. They illustrate the report layout and analytical flow. Use the PBIX and CSV to verify each figure, measure and interaction.
+
 ### Banking Overview
 ![Banking Overview](./screenshots/dashboard-overview.svg)
 
