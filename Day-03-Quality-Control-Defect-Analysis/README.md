@@ -107,6 +107,7 @@ Day-03-Quality-Control-Defect-Analysis/
 | `Quality_Control_Defect_Analysis.pbix` | Power BI dashboard |
 | `Day3-Quality Control.pdf` | Assignment/report |
 | `README.md` | Project documentation |
+| `screenshots/defect-analysis-layout-preview.svg` | Static layout concept, not an exported Power BI screenshot |
 
 ---
 
