@@ -142,7 +142,7 @@ This extends the challenge beyond the original 10 business questions and provide
 ```text
 Day-01-SQL-Food-Delivery-Analysis/
 │
-├── Day-01-SQL-Food-Delivery-Analysis
+├── Day-01-SQL-Food-Delivery-Analysis.sql
 ├── Coding Challenge-Day 1.pdf
 └── README.md
 ```
@@ -160,7 +160,7 @@ The SQL file contains:
 ## 🔍 How to Run
 
 1. Open **MySQL Workbench** or another MySQL client.
-2. Open the SQL file in this folder.
+2. Open [Day-01-SQL-Food-Delivery-Analysis.sql](Day-01-SQL-Food-Delivery-Analysis.sql) in this folder.
 3. Execute the script from top to bottom.
 4. Select the `DAY1` database.
 5. Run the business and interview queries individually to inspect the results.
