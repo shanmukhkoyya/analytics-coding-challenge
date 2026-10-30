@@ -1,39 +1,55 @@
 # Data Analytics Coding Challenge
 
-This repository is my working log for practising analytics through small, business-focused exercises. Each folder contains the files for a challenge, organised so I can revisit the method and explain the result.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=DATA%20ANALYTICS%20CHALLENGE&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=SQL%20%7C%20EXCEL%20%7C%20POWER%20BI&descAlignY=65" width="100%" />
+</p>
 
-## Completed challenges
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/Data_Analytics-00A6A6?style=for-the-badge" />
+</p>
 
-| Challenge | Main tool | Included work |
+## About This Repository
+
+This repository documents my practical learning in data analytics through small, business-focused projects. Each challenge includes its working files and a project README explaining the business question, analysis approach, findings and limitations.
+
+The goal is to practise applying analytics tools to structured problems and to build a portfolio that clearly communicates the work.
+
+## Completed Challenges
+
+| Challenge | Main Tool | Project Deliverables |
 |---|---|---|
-| [Day 01 — SQL Food Delivery Analysis](Day-01-SQL-Food-Delivery-Analysis/) | SQL / MySQL | SQL challenge file, README, assignment PDF |
-| [Day 02 — Household Energy Consumption](Day-02-Household-Energy-Consumption-Analysis/) | Excel | Workbook, README, assignment PDF |
-| [Day 03 — Quality Control Defect Analysis](Day-03-Quality-Control-Defect-Analysis/) | Power BI / DAX | Power BI file, README, assignment PDF |
-| [Day 04 — Banking Sector Analytics](Day-04-Banking-Sector-Analytics/) | Power BI / DAX | Dataset, PBIX, insight presentation, README, assignment PDF |
+| [Day 01 — SQL Food Delivery Analysis](Day-01-SQL-Food-Delivery-Analysis/) | SQL / MySQL | SQL script, sample relational database, assignment PDF and documentation |
+| [Day 02 — Household Energy Consumption](Day-02-Household-Energy-Consumption-Analysis/) | Microsoft Excel | Analysis workbook, PivotTables, PivotCharts, assignment PDF and documentation |
+| [Day 03 — Quality Control Defect Analysis](Day-03-Quality-Control-Defect-Analysis/) | Power BI / DAX | Power BI report, dashboard layout preview, assignment PDF and documentation |
+| [Day 04 — Banking Sector Analytics](Day-04-Banking-Sector-Analytics/) | Power BI / DAX | Dataset, Power BI report, insight presentation, assignment PDF and documentation |
 
-The table lists the four challenges currently organised in this repository. More will be added as the work is completed.
+## Skills Practised
 
-## Skills covered
-- **SQL:** filtering, joins, aggregation, and answering data questions
-- **Excel:** data preparation and spreadsheet-based analysis
-- **Power BI / DAX:** measures, KPIs, visual analysis, and interactive reporting
-- **Python:** being added to my practice as I progress through NumPy, Pandas, and exploratory analysis
+- **SQL / MySQL:** filtering, joins, grouping, aggregation, subqueries and business-question analysis.
+- **Microsoft Excel:** data summarisation, PivotTables, PivotCharts and dashboard-style reporting.
+- **Power BI:** data modelling, DAX measures, KPI cards, charts, slicers and interactive reporting.
+- **Data Analysis:** understanding business questions, comparing groups, interpreting patterns and communicating findings.
+- **Documentation & Version Control:** writing project READMEs and organising work with Git and GitHub.
 
-## How I use this repository
-For each challenge, I aim to answer six questions:
+## My Analysis Workflow
 
-1. What is the question or business problem?
-2. What data was supplied?
-3. What preparation or validation was needed?
-4. Which tool or technique did I use?
-5. What result did I find?
-6. What are the limits of that result?
+For each challenge, I aim to follow a consistent process:
 
-This keeps the focus on explaining the analysis, not only saving a workbook or query file.
+1. **Understand** — identify the business problem and analysis questions.
+2. **Inspect** — review the supplied data and understand its structure.
+3. **Prepare** — validate and organise data where required.
+4. **Analyse** — apply the relevant SQL, Excel or Power BI techniques.
+5. **Communicate** — present results through queries, tables, charts or dashboards.
+6. **Evaluate** — document findings, assumptions and limitations.
 
-## Repository layout
+## Repository Structure
+
 ```text
 analytics-coding-challenge/
+│
 ├── Day-01-SQL-Food-Delivery-Analysis/
 ├── Day-02-Household-Energy-Consumption-Analysis/
 ├── Day-03-Quality-Control-Defect-Analysis/
@@ -41,10 +57,23 @@ analytics-coding-challenge/
 └── README.md
 ```
 
-Open an individual folder for its instructions, project files, and detailed README.
+Open any project folder to view its detailed README and project files.
 
-## Current direction
-My next step is to make more of the exercises end-to-end: start with a clearly stated question, validate the source data, explain key results, and document what I would investigate next.
+## Important Notes
+
+- These are learning and portfolio projects based on the datasets and challenge materials included in each folder.
+- Findings should be interpreted within each project's dataset and stated limitations.
+- Static layout previews are labelled as previews; they are not presented as exported screenshots from the BI tool.
+- Project folders may be improved as the analysis and documentation develop.
 
 ## Author
-**Shanmukh Koyya** · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
+
+**Shanmukh Koyya**
+
+- **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
+- **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
+- **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
+
+---
+
+*Learning by building, analysing and documenting practical data projects.*
