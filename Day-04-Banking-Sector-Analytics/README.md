@@ -243,4 +243,5 @@ Day-04-Banking-Sector-Analytics/
 **Project:** Day 04 — Banking Sector Analytics  
 **Tools:** Power BI | Power Query | DAX  
 **Author:** Shanmukh Koyya  
+**LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
 **GitHub:** [shanmukhkoyya](https://github.com/shanmukhkoyya)
