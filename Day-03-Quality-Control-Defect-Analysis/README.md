@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=QUALITY%20CONTROL%20ANALYSIS&fontSize=30&fontColor=ffffff&fontAlignY=40&desc=POWER%20BI%20%7C%20DAX%20%7C%20QUALITY%20ANALYTICS&descAlignY=65" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/DAX-4479A1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Quality_Analytics-00A6A6?style=for-the-badge" />
+</p>
+
 # 🏭 Day 03 — Quality Control Defect Analysis
 
 ## 📌 Project Overview
