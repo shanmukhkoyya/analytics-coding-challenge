@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=FOOD%20DELIVERY%20ANALYSIS&fontSize=30&fontColor=ffffff&fontAlignY=40&desc=MYSQL%20%7C%20SQL%20%7C%20BUSINESS%20ANALYSIS&descAlignY=65" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Data_Analytics-00A6A6?style=for-the-badge" />
+</p>
+
 # 📊 Day 01 — SQL Food Delivery Analysis
 
 ## 📌 Project Overview
