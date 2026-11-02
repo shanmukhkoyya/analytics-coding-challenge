@@ -94,7 +94,7 @@ These are descriptive observations and do not establish that any one household c
 | PivotCharts | Visual analysis |
 | GitHub | Project version control and documentation |
 
-## 10. Project Files
+## 12. Project Files
 
 | File | Description |
 |---|---|
@@ -102,7 +102,7 @@ These are descriptive observations and do not establish that any one household c
 | [Project PDF](./day02.pdf) | Challenge/project reference document |
 | [README](./README.md) | Project documentation |
 
-## 11. How to Explore the Project
+## 13. How to Explore the Project
 
 1. Download or clone the repository.
 2. Open `Day-02-Household_Energy_Analysis.xlsx` in Microsoft Excel.
@@ -110,14 +110,14 @@ These are descriptive observations and do not establish that any one household c
 4. Explore the PivotCharts and dashboard reporting.
 5. Compare consumption across family size, appliance count and income level.
 
-## 12. Limitations
+## 14. Limitations
 
 - Findings are based on the dataset included in the workbook.
 - Group averages describe the available sample and may not represent all households.
 - The analysis identifies patterns but does not prove causal relationships.
 - Additional information such as location, season, appliance efficiency and occupancy hours could improve the analysis.
 
-## 13. Project Structure
+## 15. Project Structure
 
 ```text
 Day-02-Household-Energy-Consumption-Analysis/
@@ -127,7 +127,7 @@ Day-02-Household-Energy-Consumption-Analysis/
 └── README.md
 ```
 
-## 14. Author
+## 16. Author
 
 **Shanmukh Koyya**
 
