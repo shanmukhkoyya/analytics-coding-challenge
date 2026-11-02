@@ -1,45 +1,35 @@
-<div align="center">
-<h1>⚡ HOUSEHOLD ENERGY — EXCEL FIELD REPORT</h1>
-<img src="https://img.shields.io/badge/WORKBOOK-EXCEL-217346?style=for-the-badge&logo=microsoftexcel"/>
-<p>Day 02 · 250 household records</p>
-</div>
+<div align="center"><h1>⚡ HOUSEHOLD ENERGY / SCORECARD</h1><p>DAY 02 · EXCEL ANALYSIS · 250 RECORDS</p><img src="https://img.shields.io/badge/WORKBOOK-EXCEL-217346?style=for-the-badge&logo=microsoftexcel"/></div>
 
-## Workbook map
-| Tab | Role |
-|---|---|
-| Raw_Data | 250 household records |
-| Data_Check | Duplicate and type checks |
-| Analysis | Summary calculations |
-| Energy consumption patterns | Monthly comparison |
-| Household group sheets | Appliance, family and income comparisons |
-| Dashboard sheet | Summary view |
+## Consumption dashboard
+<table><tr><td align="center"><h1>301.34</h1><sub>overall average kWh</sub></td><td align="center"><h1>349.17</h1><sub>February · highest</sub></td><td align="center"><h1>254.30</h1><sub>August · lowest</sub></td></tr></table>
 
-## Saved PivotTable findings
-| Grouping | Highest group | Average usage |
+## Household comparison
+| SEGMENT | HIGHEST GROUP | AVERAGE USAGE |
 |---|---|---:|
 | Appliance count | 7 appliances | 339.05 kWh |
 | Family size | 3 members | 330.63 kWh |
 | Income level | Middle income | 308.05 kWh |
 
-## Monthly meter
-| Month | Average usage |
-|---|---:|
-| February · highest | 349.17 kWh |
-| August · lowest | 254.30 kWh |
-| **Overall** | **301.34 kWh** |
-
 <sub>Values are from saved PivotTable summaries, not independently recalculated from all raw rows.</sub>
 
-## Workbook download shelf
+## Workbook navigation
+```text
+RAW_DATA → DATA_CHECK → ANALYSIS → MONTHLY PATTERNS
+                                  ↘ APPLIANCE GROUPS
+                                  ↘ FAMILY / INCOME GROUPS
+                                  ↘ DASHBOARD
+```
+
+## Download & validation
 - [Excel workbook](./Day-02-Household_Energy_Analysis.xlsx)
 - [Results verification](./RESULTS_VERIFICATION.md)
-- [Validation guide](./WORKBOOK_VALIDATION_GUIDE.md)
-- [Python helper](./verify_workbook.py)
-- [PDF](./day02.pdf)
+- [Workbook validation guide](./WORKBOOK_VALIDATION_GUIDE.md)
+- [Python inspection helper](./verify_workbook.py)
+- [PDF report](./day02.pdf)
 
-## Data quality note
-250 source records · 0 duplicates reported · data types marked Correct.
+## Quality gate
+250 source rows · 0 duplicates reported · data types marked Correct.
 
 > Formula-driven cells had blank cached values during automated inspection. Recalculate and refresh the workbook in Excel before treating formula-based dashboard KPIs as final.
 
-Group averages describe this sample only; they do not prove that income, appliance count or family size causes consumption changes.
+These sample averages do not prove that household income, appliance count or family size causes energy consumption changes.
