@@ -1,51 +1,30 @@
-# 🍔 FOOD DELIVERY — SQL CASE FILE
-### Day 01 · Restaurant orders and customer activity
+<div align="center"><h1>🍔 ORDER DESK / FOOD DELIVERY</h1><p>DAY 01 · SQL CASE STUDY</p></div>
 
-## Case snapshot
-| Customers | Orders | Ordered customers | No-order customers |
-|---:|---:|---:|---:|
-| 10 | 10 | 8 | 2 |
+## Daily operations snapshot
+<table><tr><td align="center"><h1>10</h1><sub>customers</sub></td><td align="center"><h1>10</h1><sub>orders</sub></td><td align="center"><h1>8</h1><sub>ordered</sub></td><td align="center"><h1>2</h1><sub>no order</sub></td></tr></table>
 
-## Revenue desk
-| Measure | Finding |
+## Restaurant sales board
+| INDICATOR | RESULT |
 |---|---:|
 | Total order value | 6,620 |
 | Average order value | 662 |
 | Top restaurant | Meghana Foods |
 | Orders at top restaurant | 3 |
 
-## Entity relationship sketch
+## Data relationship sketch
 ```mermaid
 erDiagram
  CUSTOMERS ||--o{ ORDERS : places
  RESTAURANTS ||--o{ ORDERS : receives
- CUSTOMERS {
-  int customer_id PK
-  string customer_name
- }
- ORDERS {
-  int order_id PK
-  int customer_id FK
-  int restaurant_id FK
-  decimal order_value
- }
- RESTAURANTS {
-  int restaurant_id PK
-  string restaurant_name
- }
 ```
 
-## Investigation steps
-1. Inspect customer and order tables.
-2. Join customers to orders.
-3. Find customers without a matching order.
-4. Aggregate order value by restaurant.
-5. Compare outputs with the assignment PDF.
+## SQL investigation route
+`CUSTOMERS + ORDERS → JOIN → FIND NON-ORDERING CUSTOMERS → GROUP BY RESTAURANT → SUM ORDER VALUE`
 
-## Evidence files
+## Project files
 - [SQL script](Day-01-SQL-Food-Delivery-Analysis.sql)
-- [Original challenge PDF](Coding%20Challenge-Day%201.pdf)
+- [Challenge PDF](Coding%20Challenge-Day%201.pdf)
 
 > The SQL workflow drops and recreates only Orders and Customers in the DAY1 database. Use a disposable practice database.
 
-These figures come from a small assignment dataset, not a live food-delivery business.
+<sub>Small assignment dataset; not a live food-delivery operating report.</sub>
