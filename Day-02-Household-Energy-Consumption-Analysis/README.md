@@ -14,7 +14,7 @@
 
 This project analyses household electricity consumption using Microsoft Excel. It explores how energy usage varies according to household characteristics such as family size, appliance count and income level.
 
-The project demonstrates a basic data analysis workflow: summarising data, comparing groups, creating charts and communicating findings.
+The project demonstrates a basic data analysis workflow: reviewing raw data, checking data quality, summarising data with PivotTables, comparing groups, creating charts and communicating findings.
 
 ## 2. Business Problem
 
@@ -38,10 +38,11 @@ This analysis explores which household groups have higher average electricity co
 | Consumption by Family Size | Compare average electricity use across household sizes |
 | Consumption by Appliance Count | Understand usage across different appliance counts |
 | Consumption by Income Level | Compare average usage among income groups |
+| Monthly Consumption Pattern | Identify months with higher and lower average electricity usage |
 
 ## 5. Key Findings
 
-The workbook's saved PivotTable summaries were checked on 2 November 2026. The following group averages and top-group labels match the workbook:
+The workbook's saved PivotTable summaries were checked on 2 November 2026. The following group averages and top-group labels match the workbook's `types of households consume the` worksheet.
 
 | Analysis Category | Highest Reported Group | Average Consumption |
 |---|---|---:|
@@ -49,21 +50,25 @@ The workbook's saved PivotTable summaries were checked on 2 November 2026. The f
 | Family Size | 3 family members | 330.63 kWh |
 | Income Level | Middle-income households | 308.05 kWh |
 
-*Checked against the saved PivotTable summaries in the workbook. They have not been independently recalculated from the 250 raw records.*
+*These figures match the saved PivotTable summaries. They have not been independently recalculated from the 250 raw records.*
 
-## Workbook Validation
+### Monthly consumption
 
-The [Results Verification](./RESULTS_VERIFICATION.md) note records the matching PivotTable values and the remaining formula-recalculation limitation. Open the workbook in Excel, recalculate it, and save it before treating formula-driven dashboard KPIs as validated.
+The workbook's saved monthly PivotTable reports:
 
+| Month | Average Electricity Usage |
+|---|---:|
+| February | 349.17 kWh — highest |
+| August | 254.30 kWh — lowest |
+| Overall | 301.34 kWh |
 
 ## 6. Business Insights
 
-- The household group with 7 appliances recorded the highest reported average electricity usage by appliance count.
-- Households with 3 family members recorded the highest reported average usage by family size.
-- Middle-income households recorded the highest reported average usage among the income groups.
-- Household characteristics can be useful dimensions for exploring energy consumption patterns.
-
-These are descriptive observations and do not establish that any one household characteristic causes higher electricity consumption.
+- The group with 7 appliances has the highest reported average electricity usage among appliance-count groups.
+- Households with 3 family members have the highest reported average usage among family-size groups.
+- Middle-income households have the highest reported average usage among the income groups.
+- February has the highest saved monthly average, while August has the lowest.
+- These are descriptive sample-level comparisons. They do not establish that appliance count, family size, or income causes higher electricity consumption.
 
 ## 7. Recommendations
 
@@ -73,15 +78,17 @@ These are descriptive observations and do not establish that any one household c
 - Maintain appliances regularly.
 - Monitor monthly electricity consumption.
 - Avoid unnecessary standby power usage.
-- Use high-consumption appliances efficiently.
+- Review high-consumption periods and use energy-intensive appliances efficiently.
 
 ## 8. Excel Skills Practised
 
 - Data summarisation
+- Data quality checks
 - PivotTables
 - PivotCharts
 - Group-wise comparison
 - Average calculations
+- Monthly trend analysis
 - Dashboard-style reporting
 - Business insight communication
 
@@ -92,42 +99,69 @@ These are descriptive observations and do not establish that any one household c
 | Microsoft Excel | Data analysis and reporting |
 | PivotTables | Data summarisation |
 | PivotCharts | Visual analysis |
+| Python validation helper | Inspect workbook sheets and calculate grouped averages |
 | GitHub | Project version control and documentation |
 
-## 12. Project Files
+## 10. Validation and Data Quality
+
+The workbook inspection found 250 source records in the `Raw_Data` sheet. The `Data_Check` worksheet reports 0 duplicate records and marks the data types as Correct.
+
+The [Results Verification](./RESULTS_VERIFICATION.md) note documents the PivotTable cross-check and an important formula-recalculation limitation: some formula-driven cells had blank cached results when inspected by the workflow. Open the workbook in Excel, recalculate it, confirm the Quality Status shows PASS, refresh the PivotTables, and save the workbook before treating dashboard KPI cards as final.
+
+The [Workbook Validation Guide](./WORKBOOK_VALIDATION_GUIDE.md) explains the complete review process. The [Python verification helper](./verify_workbook.py) can be run locally to inspect the workbook and calculate group averages from detected source columns.
+
+## 11. Project Files
 
 | File | Description |
 |---|---|
-| [Excel Analysis Workbook](./Day-02-Household_Energy_Analysis.xlsx) | Household energy analysis and Excel reporting |
+| [Excel Analysis Workbook](./Day-02-Household_Energy_Analysis.xlsx) | Household energy data, PivotTables, charts and dashboard |
+| [Results Verification](./RESULTS_VERIFICATION.md) | Workbook PivotTable cross-check, findings and limitations |
+| [Workbook Validation Guide](./WORKBOOK_VALIDATION_GUIDE.md) | Steps to recalculate and validate the workbook |
+| [Python Verification Helper](./verify_workbook.py) | Optional script to inspect sheets and calculate grouped averages |
 | [Project PDF](./day02.pdf) | Challenge/project reference document |
 | [README](./README.md) | Project documentation |
 
-## 13. How to Explore the Project
+## 12. How to Explore the Project
 
 1. Download or clone the repository.
 2. Open `Day-02-Household_Energy_Analysis.xlsx` in Microsoft Excel.
-3. Review the analysis sheets and PivotTables.
-4. Explore the PivotCharts and dashboard reporting.
-5. Compare consumption across family size, appliance count and income level.
+3. Review the `Raw_Data`, `Data_Check`, and `Analysis` sheets.
+4. Explore the PivotTables and PivotCharts.
+5. Recalculate the workbook and refresh the PivotTables.
+6. Compare consumption across family size, appliance count, income level and month.
 
-## 14. Limitations
+To run the optional Python verification helper, install its dependencies and execute:
+
+```bash
+python -m pip install pandas openpyxl
+python verify_workbook.py "Day-02-Household_Energy_Analysis.xlsx"
+```
+
+The helper does not modify the workbook. Check its detected columns and source sheet before using its output as final evidence.
+
+## 13. Limitations
 
 - Findings are based on the dataset included in the workbook.
 - Group averages describe the available sample and may not represent all households.
+- The three headline values have been matched to saved PivotTable summaries but have not been independently recalculated from every raw record in this review.
+- Formula-driven KPI cells require recalculation in Excel; see the Results Verification note.
 - The analysis identifies patterns but does not prove causal relationships.
 - Additional information such as location, season, appliance efficiency and occupancy hours could improve the analysis.
 
-## 15. Project Structure
+## 14. Project Structure
 
 ```text
 Day-02-Household-Energy-Consumption-Analysis/
 │
 ├── Day-02-Household_Energy_Analysis.xlsx
 ├── day02.pdf
-└── README.md
+├── README.md
+├── RESULTS_VERIFICATION.md
+├── WORKBOOK_VALIDATION_GUIDE.md
+└── verify_workbook.py
 ```
 
-## 16. Author
+## 15. Author
 
 **Shanmukh Koyya**
 
@@ -137,6 +171,3 @@ Day-02-Household-Energy-Consumption-Analysis/
 
 **Project:** Day 02 — Household Energy Consumption Analysis  
 **Focus:** Excel | PivotTables | PivotCharts | Data Analysis
-## 15. Results Verification
-
-The three reported averages are still awaiting independent workbook validation. Follow the [Results Verification Checklist](./RESULTS_VERIFICATION.md) before presenting them as confirmed findings.
