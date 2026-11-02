@@ -1,29 +1,48 @@
 # 🍔 FOOD DELIVERY — SQL CASE FILE
-**Day 01 · Restaurant orders and customer activity**
+### Day 01 · Restaurant orders and customer activity
 
 ## Case snapshot
-| Customers | Orders | Ordered | No order |
+| Customers | Orders | Ordered customers | No-order customers |
 |---:|---:|---:|---:|
 | 10 | 10 | 8 | 2 |
 
-| Order measure | Result |
+## Revenue desk
+| Measure | Finding |
 |---|---:|
 | Total order value | 6,620 |
 | Average order value | 662 |
 | Top restaurant | Meghana Foods |
 | Orders at top restaurant | 3 |
 
-## Relationship sketch
-<p align="center"><b>Customers</b>　1 ───── *　<b>Orders</b>　* ───── 1　<b>Restaurants</b></p>
+## Entity relationship sketch
+```mermaid
+erDiagram
+ CUSTOMERS ||--o{ ORDERS : places
+ RESTAURANTS ||--o{ ORDERS : receives
+ CUSTOMERS {
+  int customer_id PK
+  string customer_name
+ }
+ ORDERS {
+  int order_id PK
+  int customer_id FK
+  int restaurant_id FK
+  decimal order_value
+ }
+ RESTAURANTS {
+  int restaurant_id PK
+  string restaurant_name
+ }
+```
 
-## Investigation path
+## Investigation steps
 1. Inspect customer and order tables.
 2. Join customers to orders.
 3. Find customers without a matching order.
 4. Aggregate order value by restaurant.
 5. Compare outputs with the assignment PDF.
 
-## Open the evidence
+## Evidence files
 - [SQL script](Day-01-SQL-Food-Delivery-Analysis.sql)
 - [Original challenge PDF](Coding%20Challenge-Day%201.pdf)
 
