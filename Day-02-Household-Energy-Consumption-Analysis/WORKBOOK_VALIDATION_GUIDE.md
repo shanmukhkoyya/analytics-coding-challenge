@@ -58,4 +58,4 @@ Save screenshots or a separate audit note showing:
 
 ## Current verification status
 
-**Pending:** the workbook has not yet been opened and recalculated in Excel as part of this review. The values in the README remain labelled as figures from existing project documentation until this validation is completed.
+**PivotTable cross-check completed:** on 2 November 2026, the three group averages and top-group labels in the README were matched to the saved PivotTable summary in the workbook. This is not a separate raw-row recalculation. Formula-driven KPI cells showed blank cached values in the workflow inspection; complete the Excel recalculation steps in RESULTS_VERIFICATION.md before treating dashboard KPIs as validated.
