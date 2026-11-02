@@ -11,6 +11,11 @@
   <img src="https://img.shields.io/badge/Data_Analytics-00A6A6?style=for-the-badge" />
 </p>
 
+
+## Evidence Capture
+
+- **Power BI Evidence Capture Guide:** [POWER_BI_EVIDENCE_CAPTURE_GUIDE.md](POWER_BI_EVIDENCE_CAPTURE_GUIDE.md) — steps and filenames for adding genuine Power BI screenshots.
+
 ## About This Repository
 
 This repository documents my practical learning in data analytics through small, business-focused projects. Each challenge includes its working files and a project README explaining the business question, analysis approach, findings and limitations.
