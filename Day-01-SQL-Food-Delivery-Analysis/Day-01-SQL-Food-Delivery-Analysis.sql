@@ -8,6 +8,11 @@
 CREATE DATABASE IF NOT EXISTS DAY1;
 USE DAY1;
 
+-- Reset only this project's tables so the script can be rerun.
+-- Orders is dropped first because it references Customers.
+DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Customers;
+
 -- ============================================================
 -- 1. CREATE TABLES
 -- ============================================================
