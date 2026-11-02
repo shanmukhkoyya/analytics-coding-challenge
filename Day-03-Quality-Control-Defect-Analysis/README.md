@@ -1,34 +1,25 @@
-# 🏭 QUALITY CONTROL — INSPECTION BOARD
-### Day 03 · Manufacturing defect analysis · Power BI
+<div align="center"><h1>🏭 QUALITY CONTROL / INSPECTION BOARD</h1><p>DAY 03 · POWER BI · MANUFACTURING DEFECTS</p></div>
 
-## Conceptual dashboard preview
+## Visual concept
 ![Defect analysis layout preview](screenshots/defect-analysis-layout-preview.svg)
-<sub>Conceptual SVG preview only—not an exported Power BI screenshot.</sub>
+<sub>Concept design only; not a genuine Power BI screenshot.</sub>
 
-## Inspection panels
-| Panel | Intended question |
-|---|---|
-| Defect overview | Which defect measures are available? |
-| Defect category | Which defect types can be compared? |
-| Production context | How do defects relate to production volume? |
-| Time pattern | Are there changes over time? |
-| Quality action | Which areas merit investigation? |
+## Inspection stations
+<table><tr><td><b>01 / DEFECT OVERVIEW</b><br/>Which defect measures exist?</td><td><b>02 / CATEGORY CHECK</b><br/>Which defect types can be compared?</td></tr><tr><td><b>03 / PRODUCTION CONTEXT</b><br/>What is the correct denominator?</td><td><b>04 / TIME REVIEW</b><br/>Are period filters valid?</td></tr></table>
 
-## Deliverables
-| Asset | Purpose |
-|---|---|
-| [Power BI report](Quality_Control_Defect_Analysis.pbix) | Interactive report file |
-| [Assignment PDF](Day3-Quality%20Control.pdf) | Original task brief |
-| [Layout preview](screenshots/defect-analysis-layout-preview.svg) | Static design concept |
+## Files on the inspection bench
+- [Power BI report](Quality_Control_Defect_Analysis.pbix)
+- [Original task PDF](Day3-Quality%20Control.pdf)
+- [Conceptual layout SVG](screenshots/defect-analysis-layout-preview.svg)
 
 ## Evidence status
-Repository includes the PBIX, PDF and one SVG preview. No verified defect-rate figures or genuine Power BI screenshot exports are documented here. Inspect the PBIX and validate fields, measures and filters before reporting numerical conclusions.
+No verified defect-rate figures or genuine screenshot exports are documented in this repository. Open the PBIX and confirm source fields, measures and filter behaviour before presenting results.
 
-## Analyst sign-off
+## Quality sign-off
 - [ ] Confirm production denominator.
-- [ ] Validate defect counts and definitions.
-- [ ] Check date filters and categories.
+- [ ] Validate defect definitions and counts.
+- [ ] Test date and category filters.
 - [ ] Reconcile KPI cards to source rows.
-- [ ] Capture genuine report screenshots.
+- [ ] Capture real report screenshots.
 
-Do not infer defect rates, trends or process causes from the conceptual image.
+**Do not infer numerical defect rates or root causes from the preview image.**
