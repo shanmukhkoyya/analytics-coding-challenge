@@ -137,3 +137,6 @@ Day-02-Household-Energy-Consumption-Analysis/
 
 **Project:** Day 02 — Household Energy Consumption Analysis  
 **Focus:** Excel | PivotTables | PivotCharts | Data Analysis
+## 15. Results Verification
+
+The three reported averages are still awaiting independent workbook validation. Follow the [Results Verification Checklist](./RESULTS_VERIFICATION.md) before presenting them as confirmed findings.
