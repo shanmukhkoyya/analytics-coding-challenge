@@ -1,77 +1,35 @@
-# Banking Sector Analytics
-### Management insight brief | Day 04 | Power BI and DAX
+<div align="center"><h1>🏦 BANKING ANALYTICS — MANAGEMENT BRIEF</h1><b>Day 04 · Customer, transaction and loan exploration</b><img src="https://img.shields.io/badge/Power%20BI-PBIX-F2C811?logo=powerbi"/></div>
 
-## Executive view
+## Executive figures
+| Source rows | Customers | Average balance |
+|---:|---:|---:|
+| 250 | 92 | 52,646.45 |
 
-The supplied sample contains 250 transaction records and 92 unique customers, dated from 24 September 2023 to 9 September 2025. The analysis reviews recorded balances, credit and debit activity, and loan-status information.
-
-## Financial activity snapshot
-
-| Indicator | Project result |
+| Transaction measure | Amount |
 |---|---:|
-| Credit transaction amount | 1,161,613.89 |
-| Debit transaction amount | 1,282,489.51 |
-| Net transaction movement | -120,875.62 |
-| Average recorded balance | 52,646.45 |
-| Records with balance below 5,000 | 10 |
+| Credits | 1,161,613.89 |
+| Debits | 1,282,489.51 |
+| Net credit minus debit | -120,875.62 |
+| Records below 5,000 balance | 10 |
 
-## Loan-status view
-
-| Indicator | Project result |
+## Loan status register
+| Status | Records |
 |---|---:|
-| Loan records | 70 |
 | Active | 25 |
 | Default | 26 |
 | Closed | 19 |
-| Default rate | 37.14% |
+| Blank | 180 |
+| Total loan records | 70 |
 
-The remaining 180 of the 250 transaction rows have blank loan-status values and are not treated as loan records in the default-rate denominator.
+Default rate among nonblank loan statuses: **37.14%** (26 of 70). Blank statuses are not classified into a known status.
 
-## Questions for a reviewer
+## Report preview gallery
+| Overview | Loan performance | Transactions |
+|---|---|---|
+| ![Overview](screenshots/dashboard-overview.svg) | ![Loans](screenshots/loan-performance.svg) | ![Transactions](screenshots/customer-transactions.svg) |
+<sub>Conceptual SVG previews, not Power BI screenshot exports.</sub>
 
-- How are credits and debits distributed over time?
-- Which customers have higher transaction activity?
-- How is the net transaction movement calculated?
-- What share of the recorded loan rows has a Default status?
-- Which records fall below the project-defined 5,000 balance threshold?
+## Deliverables
+[Power BI dashboard](Banking_Sector_Analytics_Dashboard.pbix) · [Source CSV](Banking_Data.csv) · [Insight presentation](Banking_Sector_Analytics_Insight_Summary_FINAL.pptx) · [Project PDF](Day4_Banking_Sector_Analysis.pdf)
 
-## Dashboard content
-
-The Power BI report is organised into three views:
-
-**01 — Banking Overview**  
-Customer and transaction KPIs, average balance, demographic breakdowns, monthly movement and low-balance highlighting.
-
-**02 — Loan and Customer Performance**  
-Loan-status distribution, default rate, a hypothetical interest-rate What-If parameter and customer rankings.
-
-**03 — Customer Transaction Details**  
-Customer-level transaction history, dates, types, amounts and net transaction impact.
-
-## Files for review
-
-- [Power BI report](./Banking_Sector_Analytics_Dashboard.pbix)
-- [Source CSV](./Banking_Data.csv)
-- [Analysis PDF](./Day4_Banking_Sector_Analysis.pdf)
-- [Insight presentation](./Banking_Sector_Analytics_Insight_Summary_FINAL.pptx)
-
-## Visual layout references
-
-These SVG files are static layout previews, not screenshots exported from Power BI Desktop:
-
-- [Banking overview](./screenshots/dashboard-overview.svg)
-- [Loan and customer performance](./screenshots/loan-performance.svg)
-- [Customer transactions](./screenshots/customer-transactions.svg)
-
-## Interpretation cautions
-
-Credit and debit amounts are used as deposit and withdrawal indicators in this exercise; they are not independently verified bank cash-flow statements. The 37.14% default rate applies to the 70 rows with loan statuses, not all 250 transaction rows. The sample does not explain the causes of defaults or represent an entire bank.
-
-## Open in Power BI
-
-Open the PBIX in Power BI Desktop, review the data model and measures, check the filters and confirm the loan-default denominator against the underlying data. Use the PDF and PowerPoint for supporting documentation.
-
----
-
-**Day 04 — Banking Sector Analytics**  
-Shanmukh Koyya · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/)
+The dataset spans 2023-09-24 to 2025-09-09. Credit/debit totals are dataset indicators, not independently verified cash-flow statements. Review missing loan statuses before decisions.
