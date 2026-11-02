@@ -1,7 +1,11 @@
-<div align="center"><h1>⚡ HOUSEHOLD ENERGY — EXCEL FIELD REPORT</h1><b>Day 02 · 250 household records</b><img src="https://img.shields.io/badge/Excel-WORKBOOK-217346?logo=microsoftexcel"/></div>
+<div align="center">
+<h1>⚡ HOUSEHOLD ENERGY — EXCEL FIELD REPORT</h1>
+<img src="https://img.shields.io/badge/WORKBOOK-EXCEL-217346?style=for-the-badge&logo=microsoftexcel"/>
+<p>Day 02 · 250 household records</p>
+</div>
 
-## Workbook navigation
-| Sheet | Purpose |
+## Workbook map
+| Tab | Role |
 |---|---|
 | Raw_Data | 250 household records |
 | Data_Check | Duplicate and type checks |
@@ -10,25 +14,30 @@
 | Household group sheets | Appliance, family and income comparisons |
 | Dashboard sheet | Summary view |
 
-## Saved PivotTable readout
-| Dimension | Highest group | Average usage |
+## Saved PivotTable findings
+| Grouping | Highest group | Average usage |
 |---|---|---:|
 | Appliance count | 7 appliances | 339.05 kWh |
 | Family size | 3 members | 330.63 kWh |
 | Income level | Middle income | 308.05 kWh |
 
-| Month view | Average usage |
+## Monthly meter
+| Month | Average usage |
 |---|---:|
-| February · Highest | 349.17 kWh |
-| August · Lowest | 254.30 kWh |
-| Overall | 301.34 kWh |
+| February · highest | 349.17 kWh |
+| August · lowest | 254.30 kWh |
+| **Overall** | **301.34 kWh** |
 
 <sub>Values are from saved PivotTable summaries, not independently recalculated from all raw rows.</sub>
 
-## Download desk
-[Excel workbook](./Day-02-Household_Energy_Analysis.xlsx) · [Results verification](./RESULTS_VERIFICATION.md) · [Validation guide](./WORKBOOK_VALIDATION_GUIDE.md) · [Python helper](./verify_workbook.py) · [PDF](./day02.pdf)
+## Workbook download shelf
+- [Excel workbook](./Day-02-Household_Energy_Analysis.xlsx)
+- [Results verification](./RESULTS_VERIFICATION.md)
+- [Validation guide](./WORKBOOK_VALIDATION_GUIDE.md)
+- [Python helper](./verify_workbook.py)
+- [PDF](./day02.pdf)
 
-## Quality status
+## Data quality note
 250 source records · 0 duplicates reported · data types marked Correct.
 
 > Formula-driven cells had blank cached values during automated inspection. Recalculate and refresh the workbook in Excel before treating formula-based dashboard KPIs as final.
