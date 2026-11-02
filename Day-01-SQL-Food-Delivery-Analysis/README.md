@@ -1,198 +1,73 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=FOOD%20DELIVERY%20ANALYSIS&fontSize=30&fontColor=ffffff&fontAlignY=40&desc=MYSQL%20%7C%20SQL%20%7C%20BUSINESS%20ANALYSIS&descAlignY=65" width="100%" />
-</p>
+# Food Delivery SQL Case | Day 01
 
-<p align="center">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Data_Analytics-00A6A6?style=for-the-badge" />
-</p>
+**Scenario:** You are analysing customer and restaurant activity for an online food-delivery platform.  
+**Database:** MySQL · **Level:** SQL fundamentals to intermediate querying
 
-# 📊 Day 01 — SQL Food Delivery Analysis
+## The business question
 
-## 📌 Project Overview
+Which customers order and spend the most, which restaurants receive the most orders, and how does activity vary by city and date?
 
-Day 01 of the **Data Analytics Coding Challenge** focuses on using **MySQL / SQL** to analyze customer and food-order data for an online food delivery platform.
-
-The goal is to answer practical business questions using SQL and strengthen core Data Analyst skills such as **joins, aggregation, filtering, grouping, subqueries, date analysis, and business-oriented querying**.
-
----
-
-## 🏢 Business Scenario
-
-Assume I am working as a **Data Analyst for an online food delivery platform**.
-
-The platform stores customer information, customer location, restaurant information, order amounts, and order dates.
-
-The analysis is designed to answer questions about **customer spending, ordering behavior, restaurant performance, and city-level activity**.
-
----
-
-## 🗄️ Database Structure
+## Data model
 
 ### Customers
 
-| Column | Data Type | Description |
-|---|---|---|
-| `customer_id` | INT | Unique customer identifier |
-| `name` | VARCHAR(50) | Customer name |
-| `city` | VARCHAR(50) | Customer city |
+| Field | Description |
+|---|---|
+| customer_id | Customer identifier |
+| name | Customer name |
+| city | Customer city |
 
 ### Orders
 
-| Column | Data Type | Description |
-|---|---|---|
-| `order_id` | INT | Unique order identifier |
-| `customer_id` | INT | Customer identifier |
-| `restaurant` | VARCHAR(50) | Restaurant name |
-| `amount` | DECIMAL(10,2) | Order amount |
-| `order_date` | DATE | Order date |
+| Field | Description |
+|---|---|
+| order_id | Order identifier |
+| customer_id | Customer reference |
+| restaurant | Restaurant name |
+| amount | Order amount |
+| order_date | Order date |
 
-### Relationship
+The Orders table is linked to Customers through customer_id.
 
-`Orders.customer_id` is connected to `Customers.customer_id` through a foreign-key relationship.
+## Query brief
 
----
+The SQL script answers ten business questions:
 
-## 🎯 Business Questions
+1. Find customers who have ordered.
+2. Calculate total spend for each customer.
+3. Identify the top three customers by spend.
+4. Find orders in the seven days before the latest order date.
+5. Find customers who have never ordered.
+6. Identify the restaurant with the most orders.
+7. Find Bengaluru customers spending more than ₹1,000.
+8. Count orders by city.
+9. Calculate average order amount by restaurant.
+10. Identify customers with more than five orders.
 
-The SQL analysis answers these 10 practical questions:
+Five additional interview-practice queries cover platform revenue, average order value, unique ordering customers, customer order summaries and the highest-value order.
 
-1. Which customers have placed at least one order?
-2. How much has each customer spent?
-3. Who are the top 3 customers by total spending?
-4. Which orders fall within the last 7 days of the latest order date?
-5. Which customers have never placed an order?
-6. Which restaurant received the highest number of orders?
-7. Which Bengaluru customers spent more than ₹1,000?
-8. How many orders were placed from each city?
-9. What is the average order amount for each restaurant?
-10. Which customers placed more than 5 orders?
+## SQL methods used
 
----
+SELECT · DISTINCT · WHERE · ORDER BY · LIMIT · INNER JOIN · LEFT JOIN · GROUP BY · HAVING · SUM · COUNT · AVG · ROUND · subqueries · DATE_SUB · COUNT(DISTINCT)
 
-## 🧠 SQL Concepts Practiced
+## Files
 
-### Core SQL
-- `SELECT`
-- `DISTINCT`
-- `WHERE`
-- `ORDER BY`
-- `LIMIT`
+- [Main SQL script](Day-01-SQL-Food-Delivery-Analysis.sql) — database setup, sample rows, ten business queries and five interview exercises.
+- [Challenge PDF](Coding%20Challenge-Day%201.pdf) — original project brief.
 
-### Joins
-- `INNER JOIN`
-- `LEFT JOIN`
-- Foreign-key relationships
+## Run safely
 
-### Aggregation
-- `SUM()`
-- `COUNT()`
-- `AVG()`
-- `ROUND()`
+1. Open the SQL script in MySQL Workbench or another MySQL client.
+2. Review the database and table setup before execution.
+3. Run the script in order, using a practice database.
+4. The script recreates only the Orders and Customers tables in the DAY1 database; existing rows in those two project tables will be replaced.
+5. Run the analysis queries individually and inspect each result.
 
-### Grouping & Filtering
-- `GROUP BY`
-- `HAVING`
+## Interpretation
 
-### Advanced Querying
-- Subqueries
-- `DATE_SUB()`
-- `COUNT(DISTINCT ...)`
+The included records are practice data. They demonstrate SQL query patterns and should not be treated as real food-delivery business performance.
 
 ---
 
-## 💼 Interview Practice
-
-Additional queries were added to practice common Data Analyst interview questions:
-
-- Total platform revenue
-- Average order value
-- Number of unique ordering customers
-- Customer order count and total spending
-- Highest-value order
-
-This extends the challenge beyond the original 10 business questions and provides additional SQL practice for interviews.
-
----
-
-## 📈 Analysis Areas
-
-**Customer Analysis**
-- Customer spending
-- Order frequency
-- Active vs. inactive customers
-- High-value customers
-
-**Restaurant Analysis**
-- Order volume
-- Average order amount
-- Highest-value orders
-
-**Geographic Analysis**
-- Orders by city
-- Bengaluru customer spending
-
-**Time Analysis**
-- Recent orders using the latest order date as the reference point
-
----
-
-## 🛠️ Tools Used
-
-- **MySQL**
-- **SQL**
-- **Git**
-- **GitHub**
-
----
-
-## 📂 Files
-
-```text
-Day-01-SQL-Food-Delivery-Analysis/
-│
-├── Day-01-SQL-Food-Delivery-Analysis.sql
-├── Coding Challenge-Day 1.pdf
-└── README.md
-```
-
-The SQL file contains:
-
-- Database and table creation
-- Sample data insertion
-- Data inspection queries
-- 10 business analysis questions
-- 5 additional interview-practice queries
-
----
-
-## 🔍 How to Run
-
-1. Open **MySQL Workbench** or another MySQL client.
-2. Open [Day-01-SQL-Food-Delivery-Analysis.sql](Day-01-SQL-Food-Delivery-Analysis.sql) in this folder.
-3. Execute the script from top to bottom.
-   - The script recreates only the `Orders` and `Customers` tables in the `DAY1` database; existing rows in those two project tables will be replaced.
-4. Select the `DAY1` database.
-5. Run the business and interview queries individually to inspect the results.
-
----
-
-## 🎓 Key Learning
-
-This challenge strengthened the practical SQL workflow:
-
-**Understand the data → Join tables → Filter records → Aggregate metrics → Group results → Apply business conditions → Interpret the output**
-
----
-
-## 👤 Author
-
-**Shanmukh Koyya**  
-AI Data Analyst — Portfolio & Interview Practice
-
-📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
-💻 **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
-
-Skills developed across this coding challenge include **SQL, Excel, Power BI, DAX and Python**.
+**Day 01 of the Data Analytics Coding Challenge**  
+Shanmukh Koyya · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/)
