@@ -1,15 +1,31 @@
-<div align="center"><img src="https://capsule-render.vercel.app/api?type=soft&color=0:172A3A,100:3A7D78&height=145&text=ANALYTICS%20CHALLENGE%20BOARD&fontSize=30&fontColor=ffffff"/><b>Four business exercises · Multiple tools</b></div>
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:172A3A,100:3A7D78&height=175&text=ANALYTICS%20CHALLENGE%20BOARD&fontSize=34&fontColor=ffffff"/>
+<b>Four business exercises · Multiple tools</b>
+</div>
 
-## Challenge tiles
-<table><tr><td width="50%"><h2>01 · 🍔</h2><b>Food delivery</b><p>SQL / MySQL</p><a href="Day-01-SQL-Food-Delivery-Analysis/">Enter challenge →</a></td><td><h2>02 · ⚡</h2><b>Household energy</b><p>Excel</p><a href="Day-02-Household-Energy-Consumption-Analysis/">Enter challenge →</a></td></tr><tr><td><h2>03 · 🏭</h2><b>Quality control</b><p>Power BI / DAX</p><a href="Day-03-Quality-Control-Defect-Analysis/">Enter challenge →</a></td><td><h2>04 · 🏦</h2><b>Banking sector</b><p>Power BI / DAX</p><a href="Day-04-Banking-Sector-Analytics/">Enter challenge →</a></td></tr></table>
+## Challenge selector
+| <div align="center">🍔 DAY 01</div> | <div align="center">⚡ DAY 02</div> |
+|---|---|
+| **Food delivery** · SQL / MySQL | **Household energy** · Excel |
+| [Enter challenge →](Day-01-SQL-Food-Delivery-Analysis/) | [Enter challenge →](Day-02-Household-Energy-Consumption-Analysis/) |
+| <div align="center">🏭 DAY 03</div> | <div align="center">🏦 DAY 04</div> |
+| **Quality control** · Power BI / DAX | **Banking sector** · Power BI / DAX |
+| [Enter challenge →](Day-03-Quality-Control-Defect-Analysis/) | [Enter challenge →](Day-04-Banking-Sector-Analytics/) |
+
+## Challenge lifecycle
+```mermaid
+flowchart LR
+ A[Understand] --> B[Inspect]
+ B --> C[Prepare]
+ C --> D[Analyse]
+ D --> E[Validate]
+ E --> F[Communicate]
+```
 
 ## Tool coverage
 <img src="https://img.shields.io/badge/SQL-4479A1?logo=mysql"/> <img src="https://img.shields.io/badge/Excel-217346?logo=microsoftexcel"/> <img src="https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi"/> <img src="https://img.shields.io/badge/DAX-4479A1"/>
 
-## Shared workflow
-<p align="center">UNDERSTAND → INSPECT → PREPARE → ANALYSE → VALIDATE → COMMUNICATE</p>
-
-## Evidence guide
+## BI evidence guide
 [Power BI Evidence Capture Guide](POWER_BI_EVIDENCE_CAPTURE_GUIDE.md)
 
 SVGs in BI folders are conceptual layout previews, not screenshots exported from Power BI Desktop. Each challenge folder contains its own detailed guide and deliverables.
