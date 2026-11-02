@@ -172,6 +172,7 @@ The SQL file contains:
 1. Open **MySQL Workbench** or another MySQL client.
 2. Open [Day-01-SQL-Food-Delivery-Analysis.sql](Day-01-SQL-Food-Delivery-Analysis.sql) in this folder.
 3. Execute the script from top to bottom.
+   - The script recreates only the `Orders` and `Customers` tables in the `DAY1` database; existing rows in those two project tables will be replaced.
 4. Select the `DAY1` database.
 5. Run the business and interview queries individually to inspect the results.
 
