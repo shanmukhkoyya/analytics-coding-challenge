@@ -1,139 +1,50 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=QUALITY%20CONTROL%20ANALYSIS&fontSize=30&fontColor=ffffff&fontAlignY=40&desc=POWER%20BI%20%7C%20DAX%20%7C%20QUALITY%20ANALYTICS&descAlignY=65" width="100%" />
-</p>
+# Quality Control | Defect Analysis Report Blueprint
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/DAX-4479A1?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Quality_Analytics-00A6A6?style=for-the-badge" />
-</p>
+**Day 03 · Power BI · DAX · Manufacturing quality analytics**
 
-# 🏭 Day 03 — Quality Control Defect Analysis
+## Reporting objective
 
-## 📌 Project Overview
+Explore production-quality information through a report designed to help review overall defect rate, product-level defect counts, daily defect movement and production-batch records.
 
-Day 03 of the **Data Analytics Coding Challenge** focuses on analyzing production quality data and identifying defect patterns using **Power BI and DAX**.
+## Planned report components
 
-The project uses an interactive dashboard to monitor overall defect rate, identify products with higher defect counts, analyze production batches, and observe defect-rate trends over time.
-
----
-
-## 🎯 Objectives
-
-- Calculate the overall defect rate
-- Identify the top 5 products with the highest number of defects
-- Analyze defect-rate trends over time
-- Analyze defects by production batch
-- Add a date slicer for interactive filtering
-- Build a professional Power BI dashboard
-
----
-
-## Dashboard layout preview
-
-![Static layout preview for Quality Control Defect Analysis](screenshots/defect-analysis-layout-preview.svg)
-
-*This image is a design companion, not a screenshot from Power BI Desktop. The chart shapes are placeholders; no actual defect rates, product rankings, or batch values are represented. Review the PBIX for the real report and data.*
-
-## 📊 Dashboard Features
-
-### 1. Overall Defect Rate
-A KPI card displays the overall defect rate as a percentage.
-
-### 2. Top 5 Products by Defect Count
-A bar chart highlights the five products with the highest number of defective items.
-
-### 3. Daily Defect Rate Trend
-A line chart shows how the defect rate changes over time.
-
-### 4. Defects by Production Batch
-A table provides defect information by:
-- Batch ID
-- Inspector Name
-- Production Line
-- Defective Items
-
-### 5. Date Slicer
-A date slicer enables filtering of the dashboard for a selected time period.
-
----
-
-## 🧠 Power BI & DAX Skills Practiced
-
-- DAX measures
-- KPI cards
-- Bar charts
-- Line charts
-- Tables
-- Slicers
-- Interactive dashboard design
-- Production-quality data analysis
-- Defect-rate analysis
-
----
-
-## 💼 Business Analysis
-
-This project is framed around a production quality-control use case.
-
-The dashboard supports analysis of:
-
-- Overall defect performance
-- Product-level defect counts
-- Daily defect-rate movement
-- Production-batch defect information
-- Time-based filtering
-
-These views can help a quality team focus analysis on products, batches, and periods showing higher defect activity.
-
----
-
-## 🛠️ Tools & Technologies
-
-| Area | Technology |
+| Report component | Intended question |
 |---|---|
-| Business Intelligence | Power BI Desktop |
-| Calculations | DAX |
-| Visualization | Power BI visuals |
-| Analysis | Data Analysis |
-| Version Control | Git & GitHub |
+| Overall defect-rate KPI | What is the reported defect rate for the selected scope? |
+| Top-five product chart | Which products have the highest defective-item counts? |
+| Daily trend line | How does the defect rate change over time? |
+| Batch detail table | Which batches, inspectors and production lines need review? |
+| Date slicer | How does the view change over a selected period? |
+
+## Layout concept
+
+![Quality control report layout concept](screenshots/defect-analysis-layout-preview.svg)
+
+> **Important evidence note:** This SVG is a static layout concept. Its chart shapes are placeholders and do not represent actual defect rates, product rankings or production-batch values. It is not a screenshot exported from Power BI Desktop. Open the PBIX to inspect the actual report and data.
+
+## Deliverables
+
+- Power BI report: Quality_Control_Defect_Analysis.pbix
+- Assignment brief: Day3-Quality Control.pdf
+- Layout concept: screenshots/defect-analysis-layout-preview.svg
+
+## Review in Power BI
+
+Open the PBIX in Power BI Desktop. Inspect the data model and DAX measures, verify how the defect rate is calculated, check the top-five ranking logic, and review the date filter context.
+
+## Analysis questions
+
+1. How is the defect-rate KPI defined?
+2. Are defective items counted at the product, batch or transaction grain?
+3. Does the top-five chart use the selected date range?
+4. Are batch and inspector comparisons based on consistent denominators?
+5. Do totals reconcile with the source data?
+
+## Current reporting boundary
+
+This README describes the intended analytical views. It does not publish numeric findings because no independently verified report results are documented here. The SVG preview must not be interpreted as a completed Power BI screenshot.
 
 ---
 
-## 📂 Files
-
-```text
-Day-03-Quality-Control-Defect-Analysis/
-│
-├── Quality_Control_Defect_Analysis.pbix
-├── Day3-Quality Control.pdf
-├── README.md
-└── screenshots/
-    └── defect-analysis-layout-preview.svg
-```
-
-| File | Description |
-|---|---|
-| `Quality_Control_Defect_Analysis.pbix` | Power BI dashboard |
-| `Day3-Quality Control.pdf` | Assignment/report |
-| `README.md` | Project documentation |
-| `screenshots/defect-analysis-layout-preview.svg` | Static layout concept, not an exported Power BI screenshot |
-
----
-
-## 🎓 Key Learning
-
-This challenge strengthened the workflow:
-
-**Understand the quality data → Define DAX metrics → Build visuals → Add interactive filtering → Analyze defect patterns → Communicate findings**
-
----
-
-## 👤 Author
-
-**Shanmukh Koyya**  
-AI Data Analyst — Portfolio & Interview Practice
-
-📧 **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)  
-💻 **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
+**Day 03 of the Data Analytics Coding Challenge**  
+Shanmukh Koyya · [GitHub](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/)
