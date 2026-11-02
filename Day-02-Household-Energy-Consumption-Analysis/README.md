@@ -51,6 +51,11 @@ The existing project documentation reports the following results:
 
 *These are the figures reported in the existing project documentation. They should be checked against the workbook before being treated as independently verified results.*
 
+## Workbook Validation
+
+Use the [Workbook Validation Guide](./WORKBOOK_VALIDATION_GUIDE.md) to independently check the three reported group averages in Excel. Until that check is completed, the figures above remain unverified results from the existing project documentation.
+
+
 ## 6. Business Insights
 
 - The household group with 7 appliances recorded the highest reported average electricity usage by appliance count.
