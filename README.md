@@ -1,84 +1,48 @@
-# Data Analytics Coding Challenge
+# Data Analytics Challenge Board
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:14243B,100:00C9D8&height=180&section=header&text=DATA%20ANALYTICS%20CHALLENGE&fontSize=32&fontColor=ffffff&fontAlignY=40&desc=SQL%20%7C%20EXCEL%20%7C%20POWER%20BI&descAlignY=65" width="100%" />
-</p>
+A working collection of small, business-framed analytics exercises. Each folder contains a separate challenge with its own data, tools, documentation and stated limitations.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Data_Analytics-00A6A6?style=for-the-badge" />
-</p>
+## Challenge board
 
+| Challenge | Business question / focus | Main tool | Project folder |
+|---|---|---|---|
+| **01 · Food Delivery** | Explore restaurant orders and customer activity | SQL / MySQL | [Open Day 01](Day-01-SQL-Food-Delivery-Analysis/) |
+| **02 · Household Energy** | Examine household electricity and gas consumption patterns | Excel | [Open Day 02](Day-02-Household-Energy-Consumption-Analysis/) |
+| **03 · Quality Control** | Review manufacturing defects and quality patterns | Power BI / DAX | [Open Day 03](Day-03-Quality-Control-Defect-Analysis/) |
+| **04 · Banking Sector** | Explore customer, transaction and loan data | Power BI / DAX | [Open Day 04](Day-04-Banking-Sector-Analytics/) |
 
-## Evidence Capture
-
-- **Power BI Evidence Capture Guide:** [POWER_BI_EVIDENCE_CAPTURE_GUIDE.md](POWER_BI_EVIDENCE_CAPTURE_GUIDE.md) — steps and filenames for adding genuine Power BI screenshots.
-
-## About This Repository
-
-This repository documents my practical learning in data analytics through small, business-focused projects. Each challenge includes its working files and a project README explaining the business question, analysis approach, findings and limitations.
-
-The goal is to practise applying analytics tools to structured problems and to build a portfolio that clearly communicates the work.
-
-## Completed Challenges
-
-| Challenge | Main Tool | Project Deliverables |
-|---|---|---|
-| [Day 01 — SQL Food Delivery Analysis](Day-01-SQL-Food-Delivery-Analysis/) | SQL / MySQL | SQL script, sample relational database, assignment PDF and documentation |
-| [Day 02 — Household Energy Consumption](Day-02-Household-Energy-Consumption-Analysis/) | Microsoft Excel | Analysis workbook, PivotTables, PivotCharts, assignment PDF and documentation |
-| [Day 03 — Quality Control Defect Analysis](Day-03-Quality-Control-Defect-Analysis/) | Power BI / DAX | Power BI report, dashboard layout preview, assignment PDF and documentation |
-| [Day 04 — Banking Sector Analytics](Day-04-Banking-Sector-Analytics/) | Power BI / DAX | Dataset, Power BI report, insight presentation, assignment PDF and documentation |
-
-## Skills Practised
+## Tool coverage
 
 - **SQL / MySQL:** filtering, joins, grouping, aggregation, subqueries and business-question analysis.
-- **Microsoft Excel:** data summarisation, PivotTables, PivotCharts and dashboard-style reporting.
+- **Excel:** data summaries, PivotTables, PivotCharts and dashboard-style reporting.
 - **Power BI:** data modelling, DAX measures, KPI cards, charts, slicers and interactive reporting.
-- **Data Analysis:** understanding business questions, comparing groups, interpreting patterns and communicating findings.
-- **Documentation & Version Control:** writing project READMEs and organising work with Git and GitHub.
+- **Analytics practice:** understand a question, inspect source data, prepare it, analyse it and explain the result.
+- **Documentation:** README files, assumptions, limitations and organised deliverables.
 
-## My Analysis Workflow
+## My challenge workflow
 
-For each challenge, I aim to follow a consistent process:
+**Understand → Inspect → Prepare → Analyse → Communicate → Validate**
 
-1. **Understand** — identify the business problem and analysis questions.
-2. **Inspect** — review the supplied data and understand its structure.
-3. **Prepare** — validate and organise data where required.
-4. **Analyse** — apply the relevant SQL, Excel or Power BI techniques.
-5. **Communicate** — present results through queries, tables, charts or dashboards.
-6. **Evaluate** — document findings, assumptions and limitations.
+For each project, the aim is to record the question, describe the supplied data, show the method, explain the results and state the limits of interpretation.
 
-## Repository Structure
+## Evidence and review
 
-```text
-analytics-coding-challenge/
-│
-├── Day-01-SQL-Food-Delivery-Analysis/
-├── Day-02-Household-Energy-Consumption-Analysis/
-├── Day-03-Quality-Control-Defect-Analysis/
-├── Day-04-Banking-Sector-Analytics/
-└── README.md
-```
+[Power BI Evidence Capture Guide](POWER_BI_EVIDENCE_CAPTURE_GUIDE.md) describes the screenshot evidence plan for the BI exercises. Static SVG layout previews are identified as previews, not screenshots exported from Power BI Desktop. The guide lists which genuine report captures would be needed for a stronger portfolio review.
 
-Open any project folder to view its detailed README and project files.
+## Repository map
 
-## Important Notes
+- Day-01-SQL-Food-Delivery-Analysis/
+- Day-02-Household-Energy-Consumption-Analysis/
+- Day-03-Quality-Control-Defect-Analysis/
+- Day-04-Banking-Sector-Analytics/
 
-- These are learning and portfolio projects based on the datasets and challenge materials included in each folder.
-- Findings should be interpreted within each project's dataset and stated limitations.
-- Static layout previews are labelled as previews; they are not presented as exported screenshots from the BI tool.
-- Project folders may be improved as the analysis and documentation develop.
+Open a challenge folder to review its detailed README and files.
 
-## Author
+## Portfolio context
 
-**Shanmukh Koyya**
-
-- **GitHub:** [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
-- **LinkedIn:** [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
-- **Email:** [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
+These are learning projects based on the supplied challenge datasets and assignment materials. Findings are dataset-specific and should not be treated as current industry benchmarks or proof of causation. The projects may be extended as the methods and evidence improve.
 
 ---
 
-*Learning by building, analysing and documenting practical data projects.*
+**Shanmukh Koyya**  
+[GitHub profile](https://github.com/shanmukhkoyya) · [LinkedIn](https://www.linkedin.com/in/shanmukh-koyya/) · [Email](mailto:shanmukhkoyya1234@gmail.com)
