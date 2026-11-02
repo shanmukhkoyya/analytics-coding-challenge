@@ -41,7 +41,7 @@ This analysis explores which household groups have higher average electricity co
 
 ## 5. Key Findings
 
-The existing project documentation reports the following results:
+The workbook's saved PivotTable summaries were checked on 2 November 2026. The following group averages and top-group labels match the workbook:
 
 | Analysis Category | Highest Reported Group | Average Consumption |
 |---|---|---:|
@@ -49,11 +49,11 @@ The existing project documentation reports the following results:
 | Family Size | 3 family members | 330.63 kWh |
 | Income Level | Middle-income households | 308.05 kWh |
 
-*These are the figures reported in the existing project documentation. They should be checked against the workbook before being treated as independently verified results.*
+*Checked against the saved PivotTable summaries in the workbook. They have not been independently recalculated from the 250 raw records.*
 
 ## Workbook Validation
 
-Use the [Workbook Validation Guide](./WORKBOOK_VALIDATION_GUIDE.md) to independently check the three reported group averages in Excel. Until that check is completed, the figures above remain unverified results from the existing project documentation.
+The [Results Verification](./RESULTS_VERIFICATION.md) note records the matching PivotTable values and the remaining formula-recalculation limitation. Open the workbook in Excel, recalculate it, and save it before treating formula-driven dashboard KPIs as validated.
 
 
 ## 6. Business Insights
